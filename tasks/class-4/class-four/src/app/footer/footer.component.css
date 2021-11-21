@@ -1,0 +1,15 @@
+.footer {
+    width: 100%;
+    height: 100px;
+    background: crimson;
+    color: white;
+    text-align: center;
+    margin-top: auto;
+  
+  }
+  .politic-private {
+    color: white;
+  }
+  .text-footer {
+    padding-top: 33px;
+  }

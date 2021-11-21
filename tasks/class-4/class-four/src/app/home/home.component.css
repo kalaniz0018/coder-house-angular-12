@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    }
+    
+    
+    
+    .icons {
+      
+      text-align: center;
+    }
+    .science {
+      float: left;
+    }
+    .calendar {
+      margin-right: 200px;
+      float: right;
+      
+    }
+    .fa-microscope {
+      font-size: 50px;
+      margin-top: 25px;
+      
+    }
+    .fa-calendar-alt {
+      font-size: 50px;
+      margin-top: 25px;
+      
+      
+    }
+    .text-icon {
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    .section-grey {
+      margin-top: 170px;
+      margin-bottom: 25px;
+    
+      background: #f8f8f8;
+    }
+    .btn-verMas{
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }

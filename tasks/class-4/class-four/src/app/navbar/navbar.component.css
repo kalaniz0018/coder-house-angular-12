@@ -1,0 +1,9 @@
+.navbar {
+    background: crimson !important;
+  }
+  nav div a {
+    color: white;
+  }
+  ul li a {
+    color: white !important;
+  }
