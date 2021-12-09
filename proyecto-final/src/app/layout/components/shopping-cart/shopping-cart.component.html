@@ -1,4 +1,4 @@
-<div class="item" [matTooltip]="total == 0 ? 'El carrito esta vacío' : ''" matTooltipClass="tooltip-class-size">
+<div  (click)="onClick()" class="item" [matTooltip]="total == 0 ? 'El carrito esta vacío' : ''" matTooltipClass="tooltip-class-size">
     <i class="fas fa-shopping-cart"></i>
     <span class="cart-basket d-flex align-items-center justify-content-center" *ngIf="total != 0">
         {{total}}

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ShoppingCartService } from 'src/app/places/services/shopping-cart.service';
 
 @Component({
@@ -11,10 +12,16 @@ export class ShoppingCartComponent implements OnInit {
   total: number = 0;
   
 
-  constructor(public  shoppingCartService: ShoppingCartService) { }
+  constructor(public  shoppingCartService: ShoppingCartService, private router: Router) { }
 
   ngOnInit(): void {
     this.total = this.shoppingCartService.getTotal();
+  }
+  onClick() {
+    if (this.total > 0) {
+      this.router.navigate(['/summary'], {});
+    }
+
   }
 
 }

@@ -3,5 +3,10 @@
   }
   .color{
     background-color: #c50505;
-    color: blanchedalmond;
+    color: white;
+    cursor: pointer;
+  }
+
+  ::ng-deep .tooltip-class-size {
+    font-size: large;
   }

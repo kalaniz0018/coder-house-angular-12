@@ -16,6 +16,8 @@ import { DialogElementRegisterComponent } from './places/components/dialog-eleme
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './layout/components/footer/footer.component';
 import { ShoppingCartComponent } from './layout/components/shopping-cart/shopping-cart.component';
+import { ShoppingCartSummaryComponent } from './places/components/shopping-cart-summary/shopping-cart-summary.component';
+import { DialogElementPaymentComponent } from './places/components/dialog-element-payment/dialog-element-payment.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { ShoppingCartComponent } from './layout/components/shopping-cart/shoppin
     InformationMovieComponent,
     DialogElementRegisterComponent,
     FooterComponent,
-    ShoppingCartComponent
+    ShoppingCartComponent,
+    ShoppingCartSummaryComponent,
+    DialogElementPaymentComponent
   ],
   imports: [
     BrowserModule,

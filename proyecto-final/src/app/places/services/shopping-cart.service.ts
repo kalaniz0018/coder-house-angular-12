@@ -8,22 +8,22 @@ export class ShoppingCartService {
 
     constructor() { }
 
-   /*  getItems(): Array<GetCardResponse> {
-        return JSON.parse(localStorage.getItem('cart_items')) ?? [];
-    } */
+ /*    getItems(): Array<GetCardResponse> {
+        return []//JSON.parse(localStorage.getItems('cart_items')) ?? [];
+    } */ 
 
     getTotal() {
-        return 2//this.getItems().length;
+        return 4//this.getItems().length;
     }
 
-    /* addToCart(item: ProductCart) {
-        let items: Array<ProductCart> = this.getItems()
+  /*    addToCart(item: GetCardResponse) {
+        let items: Array<GetCardResponse> = this.getItems()
         items.push(item);
         this.saveCart(items);
-    }
-
-    removeFromCart(item: ProductCart): Array<ProductCart> {
-        let items: Array<ProductCart> = this.getItems()
+    } */
+/* 
+    removeFromCart(item: GetCardResponse): Array<GetCardResponse> {
+        let items: Array<GetCardResponse> = this.getItems()
         const index = items.findIndex((o) => o.title === item.title);
 
         if (index > -1) {
@@ -32,9 +32,9 @@ export class ShoppingCartService {
         }
 
         return items;
-    }
-
-    saveCart(items: Array<ProductCart>): void {
-        localStorage.setItem('cart_items', JSON.stringify(items));
     } */
+
+  /*   saveCart(items: Array<GetCardResponse>): void {
+        localStorage.setItem('cart_items', JSON.stringify(items));
+    }  */
 }
