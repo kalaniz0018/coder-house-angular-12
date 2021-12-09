@@ -14,7 +14,7 @@ export class MovieService {
         return {
             list: [{
                 title: "300",
-                image: "../../../../assets/images/esparta.jpg",
+                image: "../../../../assets/images/esparta.jpg",       
                 id: 1,
                 description: "The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.",
                 year: "1995",
@@ -24,6 +24,7 @@ export class MovieService {
             {
                 title: "Howl's moving castle",
                 image: "../../../../assets/images/howls-moving-castle.jpg",
+
                 id: 2,
                 description: "The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.",
                 year: "1995",
