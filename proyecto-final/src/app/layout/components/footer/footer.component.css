@@ -1,0 +1,99 @@
+.footer-info {
+    text-align: left;
+    color: #666;
+    padding-bottom: 5px;
+    padding-top: 1%;
+    padding-left: 10%;
+    float: left;
+  }
+  
+  #main-footer {
+    background-color: #222;
+    height: 58px;
+    width: 100%;
+  }
+  
+  .footer-info a {
+    font-weight: 700;
+    color: #666;
+  }
+  
+  .et_pb_section_8.et_pb_section {
+    margin-top: -3px;
+  }
+  
+  .et_pb_section {
+    padding: 54px 0;
+    position: relative;
+  }
+  
+  .et_pb_text_inner {
+    text-align: left;
+   
+  }
+  
+  a {
+    color: #c50505;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .text_legal {
+    text-align: center;
+    font-size: 120%;
+  }
+  
+  .text_politicas {
+    text-align: center;
+    line-height: 2em;
+    font-weight: 500;
+    font-size: 120%;
+  }
+  
+  .logo_madrid {
+    text-align: center;
+  }
+  
+  .space {
+    position: relative;
+    z-index: 5;
+  }
+  
+  .background {
+    margin-top: -3px;
+    background-color: #efefef !important;
+    padding: 54px 0;
+    position: relative;
+  }
+  
+  .background-img {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIyMDBweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNmYWZhZmEiPjxwYXRoIGQ9Ik01MDQuODU0LDgwLjA2NmM3LjgxMiwwLDE0Ljg5MywwLjMxOCwyMS40MSwwLjg3OSBjLTI1LjkyNSwyMi40NzUtNTYuMDkzLDQwLjg1Mi0xMDIuOTQ2LDQwLjg1MmMtMjAuNzc5LDAtMzcuOTk2LTIuMzQ5LTUyLjg5OC02LjA3QzQxMy41MTcsMTA3LjI5NSw0MzQuMDU2LDgwLjA2Niw1MDQuODU0LDgwLjA2NnogTTc3NS45MzgsNTEuOTQ3YzE5LjE0NSwxOC41OTYsMzkuMDk3LDM1LjA1MSw3Ny45NTYsMzUuMDUxYzQ2LjkwNywwLDYyLjI5OS0xNC45ODYsODAuOTEyLTI0Ljk4IGMtMjEuMzU3LTE1Ljc4My00Ni44MDQtMjguMzQ4LTg1LjQ4OS0yOC4zNDhDODE2LjgyOSwzMy42NzEsNzk0LjIzMyw0MS40MTEsNzc1LjkzOCw1MS45NDd6IiBmaWxsLW9wYWNpdHk9Ii4zIi8+PHBhdGggZD0iTTEyMDAuMTEyLDQ2LjI5MmMzOS44MDQsMCw1OS45ODYsMjIuNDc5LDc5Ljg4OCwzOS42OXYxNi44MDUgYy0xOS45MDMtMTAuODM1LTQwLjA4NC0yMS43NzctNzkuODg4LTIxLjc3N2MtNzIuMDE0LDAtNzguNzE1LDQzLjU1OS0xNDcuOTY0LDQzLjU1OWMtNTYuODQsMC04MS4yNDctMzUuODc2LTExNy4zNDItNjIuNTUyIGM5LjMwOS00Ljk5OCwxOS40MjMtOC43NDksMzQuNjktOC43NDljNTUuODQ2LDAsNjEuOTksMzkuNjE3LDExNS42MDIsMzkuNjE3QzExNDMuMTc3LDkyLjg4NywxMTQyLjYxOCw0Ni4yOTIsMTIwMC4xMTIsNDYuMjkyeiBNODAuMDExLDExNS40ODhjLTQwLjAwNiwwLTYwLjAwOC0xMi4yMDYtODAuMDExLTI5LjUwNnYxNi44MDZjMjAuMDAzLDEwLjg5MSw0MC4wMDUsMjEuNzgyLDgwLjAxMSwyMS43ODIgYzgwLjAwNCwwLDc4LjU5Ny0zMC40MDcsMTM3LjY2OS0zMC40MDdjNTUuOTcxLDAsNjIuNTI2LDI0LjAyNiwxMjYuMzM3LDI0LjAyNmM5Ljg1OCwwLDE4LjUwOS0wLjkxNiwyNi40MDQtMi40NjEgYy01Ny4xODYtMTQuMjc4LTgwLjE3Ny00OC44MDgtMTM4LjY2LTQ4LjgwOEMxNTQuNjk4LDY2LjkxOSwxMzEuODAxLDExNS40ODgsODAuMDExLDExNS40ODh6IE01MjYuMjY1LDgwLjk0NSBjNTYuODQ4LDQuOTAyLDcwLjA1NiwyOC43MjYsMTM3LjE5MywyOC43MjZjNTQuMDAxLDAsNzMuNDMtMzUuMjM3LDExMi40OC01Ny43MjRDNzUxLjA2LDI3Ljc4Miw3MjcuNTQ4LDAsNjY1LjY5MSwwIEM1OTcuMzgxLDAsNTY3LjA4Niw0NS41NTUsNTI2LjI2NSw4MC45NDV6IiBmaWxsLW9wYWNpdHk9Ii41Ii8+PHBhdGggZD0iTTAsMHY4NS45ODJjMjAuMDAzLDE3LjMsNDAuMDA1LDI5LjUwNiw4MC4wMTEsMjkuNTA2YzUxLjc5MSwwLDc0LjY4OC00OC41NjksMTUxLjc1MS00OC41NjkgYzU4LjQ4MiwwLDgxLjQ3MywzNC41MzEsMTM4LjY2LDQ4LjgwOGM0My4wOTYtOC40MzIsNjMuNjM0LTM1LjY2MiwxMzQuNDMzLTM1LjY2MmM3LjgxMiwwLDE0Ljg5MywwLjMxOCwyMS40MSwwLjg3OSBDNTY3LjA4Niw0NS41NTUsNTk3LjM4MSwwLDY2NS42OTEsMGM2MS44NTYsMCw4NS4zNjksMjcuNzgyLDExMC4yNDYsNTEuOTQ3YzE4LjI5NS0xMC41MzYsNDAuODkxLTE4LjI3Niw3My4zNzgtMTguMjc2IGMzOC42ODUsMCw2NC4xMzIsMTIuNTY0LDg1LjQ4OSwyOC4zNDhjOS4zMDktNC45OTgsMTkuNDIzLTguNzQ5LDM0LjY5LTguNzQ5YzU1Ljg0NiwwLDYxLjk5LDM5LjYxNywxMTUuNjAyLDM5LjYxNyBjNTguMDgsMCw1Ny41MjEtNDYuNTk1LDExNS4wMTUtNDYuNTk1YzM5LjgwNCwwLDU5Ljk4NiwyMi40NzksNzkuODg4LDM5LjY5VjBIMHoiLz48L2c+PC9zdmc+);
+    background-size: 100% 200px;
+    top: 0;
+    height: 200px;
+    z-index: 1;
+    position: absolute;
+    display: block;
+    position: absolute;
+    pointer-events: none;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin-top: -1px;
+  }
+  
+  
+  @media screen and (max-width: 952px) {
+    .row {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .google {
+      margin-left: 21%;
+    }
+  }
+  

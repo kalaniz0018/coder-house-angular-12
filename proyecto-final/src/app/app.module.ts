@@ -15,6 +15,7 @@ import { InformationMovieComponent } from './places/components/information-movie
 import { ShoppingCartComponent } from './places/components/shopping-cart/shopping-cart.component';
 import { DialogElementRegisterComponent } from './places/components/dialog-element-register/dialog-element-register.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from './layout/components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ListMovieComponent,
     InformationMovieComponent,
     ShoppingCartComponent,
-    DialogElementRegisterComponent
+    DialogElementRegisterComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

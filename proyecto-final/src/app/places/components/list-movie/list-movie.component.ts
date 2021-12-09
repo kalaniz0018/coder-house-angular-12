@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { GetCardResponse } from '../../interfaces/get-card-response.interface';
+import { MovieService } from '../../services/movie.services';
 
 @Component({
   selector: 'app-list-movie',
@@ -7,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListMovieComponent implements OnInit {
 
-  constructor() { }
+  @Input() content: GetCardResponse | undefined;
+
+  constructor(public movieService: MovieService) { }
 
   ngOnInit(): void {
   }
