@@ -1,10 +1,4 @@
-.content {
-    padding: 54px 0;
-    justify-content: center;
-    margin-left: 15%;
-    margin-right: 15%;
-  }
-  
+
   :host {
     display: flex;
     justify-content: center;

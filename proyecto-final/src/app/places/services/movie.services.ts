@@ -13,8 +13,8 @@ export class MovieService {
 
         return {
             list: [{
-                title: "El  castillo del vagabundo",
-                image: "string",
+                title: "300",
+                image: "../../../../assets/images/esparta.jpg",
                 id: 1,
                 description: "The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.",
                 year: "1995",
@@ -22,8 +22,8 @@ export class MovieService {
                 price:35
             },
             {
-                title: "El viaje de Chihiro",
-                image: "string",
+                title: "Howl's moving castle",
+                image: "../../../../assets/images/howls-moving-castle.jpg",
                 id: 2,
                 description: "The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.",
                 year: "1995",
@@ -31,8 +31,8 @@ export class MovieService {
                 price:35
             },
             {
-                title: "Castillo en el cielo",
-                image: "string",
+                title: "Los coristas",
+                image: "../../../../assets/images/les-choristes.jpg",
                 id: 3,
                 description: "The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.",
                 year: "1995",
@@ -40,8 +40,8 @@ export class MovieService {
                 price:35
             },
             {
-                title: "Ponyo",
-                image: "string",
+                title: "Los fantasmas de Goya",
+                image: "../../../../assets/images/los-fantasmas-de-goya.jpg",
                 id: 4,
                 description: "The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.",
                 year: "1995",
@@ -49,8 +49,8 @@ export class MovieService {
                 price:35
             },
             {
-                title: "Sakura",
-                image: "string",
+                title: "Mi vecino Totoro",
+                image: "../../../../assets/images/mi-vecino-totoro.jpg",
                 id: 5,
                 description: "The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.",
                 year: "1995",
@@ -58,8 +58,8 @@ export class MovieService {
                 price:35
             },
             {
-                title: "Los fantasmas de Goya",
-                image: "string",
+                title: "Moliere",
+                image: "../../../../assets/images/moliere.png",
                 id: 6,
                 description: "The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.",
                 year: "1995",
@@ -67,8 +67,8 @@ export class MovieService {
                 price:35
             },
             {
-                title: "Moliere",
-                image: "string",
+                title: "Mulan",
+                image: "../../../../assets/images/mulan.jpg",
                 id: 7,
                 description: "The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.",
                 year: "1995",
@@ -76,8 +76,8 @@ export class MovieService {
                 price:35
             },
             {
-                title: "Mi vecino Totoro",
-                image: "string",
+                title: "Pocahontas",
+                image: "../../../../assets/images/pocahontas.png",
                 id: 8,
                 description: "The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.",
                 year: "1995",
@@ -85,8 +85,8 @@ export class MovieService {
                 price:35
             },
             {
-                title: "Mulan",
-                image: "string",
+                title: "Ponyo",
+                image: "../../../../assets/images/ponyo.jpg",
                 id: 9,
                 description: "The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.",
                 year: "1995",
@@ -94,8 +94,8 @@ export class MovieService {
                 price:35
             },
             {
-                title: "Pocahontas",
-                image: "string",
+                title: "V de venganza",
+                image: "../../../../assets/images/V.jpg",
                 id: 10,
                 description: "The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.",
                 year: "1995",
