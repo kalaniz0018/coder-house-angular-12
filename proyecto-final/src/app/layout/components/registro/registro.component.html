@@ -1,7 +1,7 @@
 <div class="container">
     <div class="formulario">
         <form [formGroup]="userForm" #formDirective="ngForm">
-            <h1 class="title">Formulario </h1>
+            <h1 class="title">Registrarse </h1>
             <p>
                 <mat-form-field appearance="outline">
                     <mat-label>Nombre</mat-label>
@@ -39,8 +39,20 @@
                     </mat-error>
                 </mat-form-field>
             </p>
+            <p>
+                <mat-form-field appearance="outline">
+                    <mat-label>Contraseña</mat-label>
+                    <input formControlName="password" [(ngModel)]="inputPassword" type="password" matInput
+                        placeholder="Contraseña">
+                    <mat-error *ngIf="userForm.get('password')?.hasError('required')">Este campo es obligatorio
+                    </mat-error>
+
+                </mat-form-field>
+            </p>
         </form>
         <button class="button-reserva" [disabled]="userForm.invalid" mat-raised-button (click)="openDialog()">Registrarse</button>
+        <button class="button-reserva"  mat-raised-button routerLink="/home">Volver a Home</button>
+
     </div>
 
 </div>

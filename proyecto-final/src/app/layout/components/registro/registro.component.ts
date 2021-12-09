@@ -14,6 +14,7 @@ export class RegistroComponent implements OnInit {
   inputSurName!: string;
   inputEmail!: string;
   inputPhone!: number;
+  inputPassword!: string;
 
 
   selectedOption: string | undefined;
@@ -39,6 +40,7 @@ export class RegistroComponent implements OnInit {
       surname: new FormControl(null, Validators.required),
       email: new FormControl(null, [Validators.required, Validators.email, Validators.pattern("[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}")]),
       phone: new FormControl(null, [Validators.required, Validators.pattern('[0-9]+')]),
+      password: new FormControl(null, Validators.required),
     })
   }
 
