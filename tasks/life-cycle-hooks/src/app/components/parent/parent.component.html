@@ -1,0 +1,6 @@
+<h1>Parent</h1>
+<button (click)='toggleChild()'>Toggle Child</button>
+
+<input type="text" [(ngModel)]='cambiarNombre'>
+
+<app-child *ngIf='isChild' [cambiarNombre]='cambiarNombre'></app-child>
