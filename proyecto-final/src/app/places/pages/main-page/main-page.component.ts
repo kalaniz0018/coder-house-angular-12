@@ -10,8 +10,8 @@ import { MovieService } from '../../services/movie.services';
   styleUrls: ['./main-page.component.css']
 })
 export class MainPageComponent implements OnInit {
-  content: any//Observable<GetCardResponse[]> = [];
-  
+  content: GetCardResponse[] = [];
+
   readonly ROOT_URL = 'https://61c0de3733f24c0017823656.mockapi.io/';
   users: any;
 
@@ -25,7 +25,10 @@ export class MainPageComponent implements OnInit {
 
 
   getDataSeccion() {
-    this.content = this.movieService.getMovie().subscribe((data) => (console.log(data)));
+    this.movieService.getMovie().subscribe(data => {
+      console.log(data);
+      this.content = data
+    });
 
   }
 }

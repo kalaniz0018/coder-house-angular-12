@@ -10,7 +10,7 @@ import { MovieService } from '../../services/movie.services';
 })
 export class ListMovieComponent implements OnInit {
 
-  @Input() content: GetCardResponse | undefined;
+  @Input() content: GetCardResponse[] = [];
   readonly ROOT_URL = 'https://61c0de3733f24c0017823656.mockapi.io/';
   users: any;
 
