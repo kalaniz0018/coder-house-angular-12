@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, Input, OnInit } from '@angular/core';
 import { GetCardResponse } from '../../interfaces/get-card-response.interface';
 import { MovieService } from '../../services/movie.services';
@@ -10,8 +11,12 @@ import { MovieService } from '../../services/movie.services';
 export class ListMovieComponent implements OnInit {
 
   @Input() content: GetCardResponse | undefined;
+  readonly ROOT_URL = 'https://61c0de3733f24c0017823656.mockapi.io/';
+  users: any;
 
-  constructor(public movieService: MovieService) { }
+  constructor(public movieService: MovieService, public http: HttpClient) { }
+  getPost() { this.users = this.http.get(this.ROOT_URL + 'users'); }
+
 
   ngOnInit(): void {
   }

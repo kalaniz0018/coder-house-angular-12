@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 import { GetCardResponse } from '../interfaces/get-card-response.interface';
 
 
@@ -7,9 +9,17 @@ import { GetCardResponse } from '../interfaces/get-card-response.interface';
 })
 export class MovieService {
 
-    constructor() {
+    private urlAPI = 'https://61c0de3733f24c0017823656.mockapi.io/';
+    constructor(private http: HttpClient) {}
+    
+    getMovie(): Observable<GetCardResponse[]> {
+            return this.http.get<GetCardResponse[]>(this.urlAPI + "movies");
     }
-    getMovie(): GetCardResponse {
+   
+    
+
+    
+  /*  getMovie(): GetCardResponse {
 
         return {
             list: [{
@@ -24,7 +34,6 @@ export class MovieService {
             {
                 title: "Howl's moving castle",
                 image: "../../../../assets/images/howls-moving-castle.jpg",
-
                 id: 2,
                 description: "The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.",
                 year: "1995",
@@ -105,6 +114,6 @@ export class MovieService {
             },
             ]
         }
-    }
+    } */
 }
 

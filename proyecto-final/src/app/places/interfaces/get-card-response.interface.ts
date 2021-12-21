@@ -1,11 +1,11 @@
-export interface GetCardResponse {
+/* export interface GetCardResponse {
     list: Array<List>,
-}
+} */
 
-export interface List {
+export interface GetCardResponse {
     title: string,
     image: string,
-    id: number,
+    id: string,
     description: string,
     year: string,
     actors: string,

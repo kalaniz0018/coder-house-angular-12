@@ -18,6 +18,7 @@ import { FooterComponent } from './layout/components/footer/footer.component';
 import { ShoppingCartComponent } from './layout/components/shopping-cart/shopping-cart.component';
 import { ShoppingCartSummaryComponent } from './places/components/shopping-cart-summary/shopping-cart-summary.component';
 import { DialogElementPaymentComponent } from './places/components/dialog-element-payment/dialog-element-payment.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { DialogElementPaymentComponent } from './places/components/dialog-elemen
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
