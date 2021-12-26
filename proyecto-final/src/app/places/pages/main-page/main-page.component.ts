@@ -13,10 +13,10 @@ export class MainPageComponent implements OnInit {
   content: GetCardResponse[] = [];
 
   readonly ROOT_URL = 'https://61c0de3733f24c0017823656.mockapi.io/';
-  users: any;
+  movies: any;
 
   constructor(public movieService: MovieService, public http: HttpClient) { }
-  getPost() { this.users = this.http.get(this.ROOT_URL + 'users'); }
+  getPost() { this.movies = this.http.get(this.ROOT_URL + 'movies'); }
 
 
   ngOnInit(): void {
