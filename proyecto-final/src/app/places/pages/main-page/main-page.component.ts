@@ -1,7 +1,8 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { GetCardResponse } from '../../interfaces/get-card-response.interface';
+import { GetUsersResponse } from '../../interfaces/get-users-response.interface';
 import { MovieService } from '../../services/movie.services';
 
 @Component({
@@ -14,6 +15,7 @@ export class MainPageComponent implements OnInit {
 
   readonly ROOT_URL = 'https://61c0de3733f24c0017823656.mockapi.io/';
   movies: any;
+  @Input() user: GetUsersResponse[] = [];
 
   constructor(public movieService: MovieService, public http: HttpClient) { }
   getPost() { this.movies = this.http.get(this.ROOT_URL + 'movies'); }

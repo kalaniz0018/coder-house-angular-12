@@ -1,7 +1,3 @@
-/* export interface GetCardResponse {
-    list: Array<List>,
-} */
-
 export interface GetCardResponse {
     title: string,
     image: string,

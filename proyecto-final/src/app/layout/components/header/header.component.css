@@ -10,3 +10,6 @@
   ::ng-deep .tooltip-class-size {
     font-size: large;
   }
+  .button-add-movie{
+    margin-left: 10px;
+  }

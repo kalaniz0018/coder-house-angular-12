@@ -19,6 +19,7 @@ import { ShoppingCartComponent } from './layout/components/shopping-cart/shoppin
 import { ShoppingCartSummaryComponent } from './places/components/shopping-cart-summary/shopping-cart-summary.component';
 import { DialogElementPaymentComponent } from './places/components/dialog-element-payment/dialog-element-payment.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AddingMovieComponent } from './layout/components/adding-movie/adding-movie.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     ShoppingCartComponent,
     ShoppingCartSummaryComponent,
-    DialogElementPaymentComponent
+    DialogElementPaymentComponent,
+    AddingMovieComponent
   ],
   imports: [
     BrowserModule,

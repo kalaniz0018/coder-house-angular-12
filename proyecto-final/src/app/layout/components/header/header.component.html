@@ -4,10 +4,12 @@
         <mat-icon>menu</mat-icon>
       </button> -->
       <span routerLink="/home">Netofly</span>
+      <button *ngIf="isAdmin" mat-raised-button class="button-add-movie"  routerLink="/add-movie">agregar película</button>
       <span class="example-spacer"></span>
       <button mat-icon-button aria-label="Example icon-button with heart icon" >
         <mat-icon routerLink="/registro" ><i class="fas fa-user"></i></mat-icon>
       </button>
+      
       <app-shopping-cart></app-shopping-cart>
       <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
         <mat-icon>share</mat-icon>

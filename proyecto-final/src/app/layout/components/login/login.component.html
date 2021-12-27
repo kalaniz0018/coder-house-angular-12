@@ -24,7 +24,7 @@
   
          
         </form>
-        <button class="button-reserva" [disabled]="userForm.invalid"  routerLink="/home" mat-raised-button>Ingresar</button>
+        <button class="button-reserva" [disabled]="userForm.invalid" (click)='validar(users)' mat-raised-button>Ingresar</button>
             <button class="button-reserva" routerLink="/registro" mat-raised-button>Registrarse</button>
     </div>
 

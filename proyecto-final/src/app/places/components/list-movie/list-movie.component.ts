@@ -17,7 +17,6 @@ export class ListMovieComponent implements OnInit {
   constructor(public movieService: MovieService, public http: HttpClient) { }
   getPost() { this.users = this.http.get(this.ROOT_URL + 'users'); }
 
-
   ngOnInit(): void {
   }
 

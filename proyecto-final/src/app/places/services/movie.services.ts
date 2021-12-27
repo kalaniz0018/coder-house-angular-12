@@ -10,11 +10,10 @@ import { GetCardResponse } from '../interfaces/get-card-response.interface';
 export class MovieService {
 
     private urlAPI = 'https://61c0de3733f24c0017823656.mockapi.io/';
-    constructor(private http: HttpClient) {}
-    
-    getMovie(): Observable<GetCardResponse[]> {
-            return this.http.get<GetCardResponse[]>(this.urlAPI + "movies");
-    }
+    constructor(private http: HttpClient) { }
 
+    getMovie(): Observable<GetCardResponse[]> {
+        return this.http.get<GetCardResponse[]>(this.urlAPI + "movies");
+    }
 }
 
