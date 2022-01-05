@@ -11,10 +11,10 @@ import { DialogElementsComponent } from '../dialog-elements/dialog-elements.comp
 })
 export class FormComponent implements OnInit {
 
-  inputName!: string;
-  inputSurName!: string;
-  inputEmail!: string;
-  inputPhone!: number;
+  inputName?: string;
+  inputSurName?: string;
+  inputEmail?: string;
+  inputPhone?: number;
 
  
   selectedOption: string | undefined;
@@ -28,7 +28,9 @@ export class FormComponent implements OnInit {
     dialogRef.afterClosed().subscribe(result => {
       this.selectedOption = result;
       //console.log()
+      
     });
+    location.reload();
   }
 
   ngOnInit(): void {
