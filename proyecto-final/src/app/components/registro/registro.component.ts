@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { DialogElementRegisterComponent } from 'src/app/places/components/dialog-element-register/dialog-element-register.component';
+import { DialogElementRegisterComponent } from 'src/app/components/dialog-element-register/dialog-element-register.component';
 import { MatDialog } from '@angular/material/dialog';
 
 @Component({

@@ -1,8 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { GetUsersResponse } from 'src/app/places/interfaces/get-users-response.interface';
-import { UserService } from 'src/app/places/services/user.service';
+import { GetUsersResponse } from 'src/app/interfaces/get-users-response.interface';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-login',

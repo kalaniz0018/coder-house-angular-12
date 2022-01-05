@@ -1,9 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, Input, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { GetCardResponse } from '../../interfaces/get-card-response.interface';
-import { GetUsersResponse } from '../../interfaces/get-users-response.interface';
-import { MovieService } from '../../services/movie.services';
+import { GetCardResponse } from 'src/app/interfaces/get-card-response.interface';
+import { GetUsersResponse } from 'src/app/interfaces/get-users-response.interface';
+import { MovieService } from 'src/app/services/movie.services';
 
 @Component({
   selector: 'app-main-page',
