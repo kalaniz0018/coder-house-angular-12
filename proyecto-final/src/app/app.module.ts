@@ -20,6 +20,7 @@ import { ShoppingCartSummaryComponent } from './components/shopping-cart-summary
 import { DialogElementPaymentComponent } from './components/dialog-element-payment/dialog-element-payment.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AddingMovieComponent } from './components/adding-movie/adding-movie.component';
+import { DialogElementAddMovieComponent } from './components/dialog-element-add-movie/dialog-element-add-movie.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { AddingMovieComponent } from './components/adding-movie/adding-movie.com
     ShoppingCartComponent,
     ShoppingCartSummaryComponent,
     DialogElementPaymentComponent,
-    AddingMovieComponent
+    AddingMovieComponent,
+    DialogElementAddMovieComponent
   ],
   imports: [
     BrowserModule,
