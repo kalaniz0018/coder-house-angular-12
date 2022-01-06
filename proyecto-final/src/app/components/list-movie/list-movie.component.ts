@@ -12,10 +12,10 @@ export class ListMovieComponent implements OnInit {
 
   @Input() content: GetCardResponse[] = [];
   readonly ROOT_URL = 'https://61c0de3733f24c0017823656.mockapi.io/';
-  users: any;
+  movie: any;
 
   constructor(public movieService: MovieService, public http: HttpClient) { }
-  getPost() { this.users = this.http.get(this.ROOT_URL + 'users'); }
+  getPost() { this.movie = this.http.get(this.ROOT_URL + 'movie'); }
 
   ngOnInit(): void {
   }

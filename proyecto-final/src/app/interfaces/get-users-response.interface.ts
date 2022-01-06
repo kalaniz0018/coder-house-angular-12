@@ -1,7 +1,9 @@
 export interface GetUsersResponse {
+    id: number,
     user: string,
+    email: string,
     password: string,
-    id: string,
+    phone: string
     rol: string
 }
 
