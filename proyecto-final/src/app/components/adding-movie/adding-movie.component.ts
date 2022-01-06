@@ -3,8 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { GetCardResponse } from 'src/app/interfaces/get-card-response.interface';
-import { GetUsersResponse } from 'src/app/interfaces/get-users-response.interface';
-import { DialogElementRegisterComponent } from '../dialog-element-register/dialog-element-register.component';
+import { DialogElementAddMovieComponent } from '../dialog-element-add-movie/dialog-element-add-movie.component';
 
 @Component({
   selector: 'app-adding-movie',
@@ -25,13 +24,13 @@ export class AddingMovieComponent implements OnInit {
 
   userForm = new FormGroup({});
 
-  readonly ROOT_URL = 'https://61c0de3733f24c0017823656.mockapi.io/movie';
+  readonly ROOT_URL = 'https://61c0de3733f24c0017823656.mockapi.io/movies';
 
   constructor(public dialog: MatDialog, public http: HttpClient) { }
 
 
   openDialog() {
-    let dialogRef = this.dialog.open(DialogElementRegisterComponent);
+    let dialogRef = this.dialog.open(DialogElementAddMovieComponent);
     dialogRef.afterClosed().subscribe(result => {
       this.selectedOption = result;
     });
