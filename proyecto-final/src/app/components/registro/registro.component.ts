@@ -34,8 +34,6 @@ export class RegistroComponent implements OnInit {
     let dialogRef = this.dialog.open(DialogElementRegisterComponent);
     dialogRef.afterClosed().subscribe(result => {
       this.selectedOption = result;
-      //console.log()
-
     });
     location.reload();
   }
@@ -43,8 +41,7 @@ export class RegistroComponent implements OnInit {
   userRegistration(register: GetUsersResponse | undefined) {
     console.log('entro la funcion register')
     this.http.post<GetUsersResponse>(this.ROOT_URL, register).subscribe(result => {
-      console.log(result)
-
+      this.openDialog();
     });
   }
 

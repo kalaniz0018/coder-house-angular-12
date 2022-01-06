@@ -72,7 +72,8 @@ const materialModules = [
   MatAutocompleteModule,      
   MatFormFieldModule,
   MatInputModule,
-  MatDialogModule
+  MatDialogModule,
+  MatInputModule 
 ];
 
 @NgModule({

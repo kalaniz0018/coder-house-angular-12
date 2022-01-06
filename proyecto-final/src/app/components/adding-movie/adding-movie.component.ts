@@ -9,6 +9,8 @@ export class AddingMovieComponent implements OnInit {
 
   constructor() { }
 
+
+
   ngOnInit(): void {
   }
 
