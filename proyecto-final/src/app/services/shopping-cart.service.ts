@@ -8,20 +8,23 @@ export class ShoppingCartService {
 
     constructor() { }
 
- /*    getItems(): Array<GetCardResponse> {
-        return []//JSON.parse(localStorage.getItems('cart_items')) ?? [];
-    } */ 
-
-    getTotal() {
-        return 4//this.getItems().length;
+    getItems(): Array<GetCardResponse> {
+        let item = localStorage.getItem('cart_items')
+        if(item){
+            return JSON.parse(item)
+        }
+        return [];
     }
 
-  /*    addToCart(item: GetCardResponse) {
+    getTotal() {
+        return this.getItems().length;
+    }
+    addToCart(item: GetCardResponse) {
         let items: Array<GetCardResponse> = this.getItems()
         items.push(item);
         this.saveCart(items);
-    } */
-/* 
+    }
+
     removeFromCart(item: GetCardResponse): Array<GetCardResponse> {
         let items: Array<GetCardResponse> = this.getItems()
         const index = items.findIndex((o) => o.title === item.title);
@@ -32,9 +35,13 @@ export class ShoppingCartService {
         }
 
         return items;
-    } */
+    }
 
-  /*   saveCart(items: Array<GetCardResponse>): void {
+    saveCart(items: Array<GetCardResponse>): void {
         localStorage.setItem('cart_items', JSON.stringify(items));
-    }  */
+    }
+
+    clearCart(): void {
+        localStorage.removeItem('cart_items');
+    }
 }

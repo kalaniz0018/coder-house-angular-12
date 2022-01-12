@@ -3,8 +3,8 @@
 }
 
 .example-header-image {
-
-  background-image: url("../../../../assets/images/letra-n.jpg");
+  /* background-image: url("../../../../assets/images/letra-n.jpg"); */
+  background-image: url();
   background-size: cover;
 }
 

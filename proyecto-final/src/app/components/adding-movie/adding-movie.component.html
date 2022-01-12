@@ -5,16 +5,16 @@
             <p>
                 <mat-form-field appearance="outline">
                     <mat-label>Nombre pelicula</mat-label>
-                    <input formControlName="filmName" [(ngModel)]="filmName" type="text" matInput placeholder="Nombre de Pelicula">
-                    <mat-error *ngIf="userForm.get('name')?.hasError('required')">Este campo es obligatorio
+                    <input formControlName="filmName"  type="text" matInput placeholder="Nombre de Pelicula">
+                    <mat-error *ngIf="userForm.get('filmName')?.hasError('required')">Este campo es obligatorio
                     </mat-error>
                 </mat-form-field>
             </p>
             <p>
                 <mat-form-field appearance="outline">
                     <mat-label>año</mat-label>
-                    <input formControlName="year" [(ngModel)]="year" type="text" matInput placeholder="año">
-                    <mat-error *ngIf="userForm.get('email')?.hasError('required')">Este campo es obligatorio
+                    <input formControlName="year"  type="text" matInput placeholder="año">
+                    <mat-error *ngIf="userForm.get('year')?.hasError('required')">Este campo es obligatorio
                     </mat-error>
                   
 
@@ -23,17 +23,17 @@
             <p>
                 <mat-form-field appearance="outline">
                     <mat-label>Descripción</mat-label>
-                    <input formControlName="description" [(ngModel)]="description" matInput placeholder="Descripción">
-                    <mat-error *ngIf="userForm.get('phone')?.hasError('required')">Este campo es obligatorio
+                    <input formControlName="description"  matInput placeholder="Descripción">
+                    <mat-error *ngIf="userForm.get('description')?.hasError('required')">Este campo es obligatorio
                     </mat-error>
                 </mat-form-field>
             </p>
             <p>
                 <mat-form-field appearance="outline">
                     <mat-label>URL de la imagen</mat-label>
-                    <input formControlName="image" [(ngModel)]="image" type="text" matInput
+                    <input formControlName="image"  type="text" matInput
                         placeholder="URL">
-                    <mat-error *ngIf="userForm.get('password')?.hasError('required')">Este campo es obligatorio
+                    <mat-error *ngIf="userForm.get('filmName')?.hasError('required')">Este campo es obligatorio
                     </mat-error>
 
                 </mat-form-field>

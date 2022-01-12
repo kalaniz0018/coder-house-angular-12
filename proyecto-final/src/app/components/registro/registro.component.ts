@@ -13,11 +13,6 @@ import { GetUsersResponse } from 'src/app/interfaces/get-users-response.interfac
 })
 export class RegistroComponent implements OnInit {
 
-  inputName!: string;
-  inputSurName!: string;
-  inputEmail!: string;
-  inputPhone!: number;
-  inputPassword!: string;
 
   selectedOption: string | undefined;
 

@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, Input, OnInit } from '@angular/core';
+import { ShoppingCartService } from 'src/app/services/shopping-cart.service';
 import { GetCardResponse } from '../../interfaces/get-card-response.interface';
 import { MovieService } from '../../services/movie.services';
 
@@ -11,13 +12,21 @@ import { MovieService } from '../../services/movie.services';
 export class ListMovieComponent implements OnInit {
 
   @Input() content: GetCardResponse[] = [];
-  readonly ROOT_URL = 'https://61c0de3733f24c0017823656.mockapi.io/';
   movie: any;
 
-  constructor(public movieService: MovieService, public http: HttpClient) { }
-  getPost() { this.movie = this.http.get(this.ROOT_URL + 'movie'); }
+  constructor(public movieService: MovieService, public shoppingCartService: ShoppingCartService, public http: HttpClient) { }
 
   ngOnInit(): void {
   }
+
+  addMovie(movie:GetCardResponse): void {
+    console.log('entrando en la funcion addMovie ' + JSON.stringify(movie))
+    this.shoppingCartService.addToCart(movie)
+  }
+
+/*   addCarrito(peli: PeliculaModel): void {
+    this.carritoService.addCarrito(peli)
+  } */
+
 
 }
