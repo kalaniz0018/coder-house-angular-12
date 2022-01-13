@@ -5,6 +5,7 @@ export interface GetCardResponse {
     description: string,
     year: string,
     actors: string,
-    price:number
+    price:number,
+    total: number
 }
 

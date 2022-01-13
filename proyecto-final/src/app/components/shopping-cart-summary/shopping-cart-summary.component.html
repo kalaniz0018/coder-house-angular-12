@@ -1,26 +1,28 @@
 <app-header></app-header>
-<div class="container" >
-    <div class="row" >
-        <div class="column-big" >
+<div class="container">
+    <div class="row">
+        <div class="column-big">
             <div class="course">
                 <h1 class="summary">Resumen</h1>
                 <div>
-                    <div class="info " *ngFor='let movie of movies'>
-                        <div>
-                            <h2>{{movie.title}}</h2>
-                            <h3 class="envio">Envío: $320</h3>
+                    <div>
+                        <div class="info " *ngFor='let movie of movies'>
+                            <div>
+                                <h2>{{movie.title}}</h2>
+                                <!--  <h3 class="envio">Envío: $320</h3> -->
+                            </div>
+                            <strong class="total-card ">Precio: {{movie.price}}</strong>
                         </div>
-                        <strong class="total-card ">Precio: {{movie.price}}</strong>
                     </div>
-                </div>
-                <div>
-                    <div class="total">
-                        <span class="total-count">
-                            Precio Total
-                        </span>
-                        <span class="total-amount">
-                            $440
-                        </span>
+                    <div>
+                        <div class="total">
+                            <span class="total-count">
+                                Precio Total
+                            </span>
+                            <span class="total-amount">
+                                $ {{ totalCarrito }} 
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>

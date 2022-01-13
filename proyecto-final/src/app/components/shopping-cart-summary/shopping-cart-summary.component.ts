@@ -12,7 +12,8 @@ import { DialogElementPaymentComponent } from '../dialog-element-payment/dialog-
 export class ShoppingCartSummaryComponent implements OnInit {
 
   selectedOption: string | undefined;
-  movies: Array<GetCardResponse> | undefined
+  movies: Array<GetCardResponse> | undefined;
+  totalCarrito: number | undefined;
 
   constructor(public dialog: MatDialog, public shoppingCartService: ShoppingCartService) { }
 
@@ -29,8 +30,11 @@ export class ShoppingCartSummaryComponent implements OnInit {
 
   ngOnInit(): void {
     this.movies = this.shoppingCartService.getItems()
+    this.totalCarrito = this.shoppingCartService.totalElement()
   }
 
- 
+
+
+
 
 }

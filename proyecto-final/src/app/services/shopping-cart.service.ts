@@ -44,4 +44,13 @@ export class ShoppingCartService {
     clearCart(): void {
         localStorage.removeItem('cart_items');
     }
+
+    totalElement() {
+        let total = 0;
+        let items: Array<GetCardResponse> = this.getItems()
+        for (let element of items) {
+            total += element.price
+        }
+        return total
+    } 
 }
