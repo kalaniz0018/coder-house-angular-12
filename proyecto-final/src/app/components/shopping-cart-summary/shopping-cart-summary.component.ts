@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { GetCardResponse } from 'src/app/interfaces/get-card-response.interface';
+import { ShoppingCartService } from 'src/app/services/shopping-cart.service';
 import { DialogElementPaymentComponent } from '../dialog-element-payment/dialog-element-payment.component';
 
 @Component({
@@ -10,8 +12,9 @@ import { DialogElementPaymentComponent } from '../dialog-element-payment/dialog-
 export class ShoppingCartSummaryComponent implements OnInit {
 
   selectedOption: string | undefined;
+  movies: Array<GetCardResponse> | undefined
 
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog, public shoppingCartService: ShoppingCartService) { }
 
 
   openDialog() {
@@ -25,6 +28,9 @@ export class ShoppingCartSummaryComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.movies = this.shoppingCartService.getItems()
   }
+
+ 
 
 }
