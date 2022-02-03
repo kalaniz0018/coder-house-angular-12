@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
   constructor(public userService: UserService, public router: Router) { }
 
   validar(users: GetUsersResponse[] = []) {
-    console.log('ingregando a la funcion validar')
+    //console.log('ingregando a la funcion validar')
     for (let user of users) {
       console.log('user')
      if(user.user === this.inputName && user.password === this.inputPassword){
